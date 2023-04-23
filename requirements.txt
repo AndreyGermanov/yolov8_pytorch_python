@@ -1,0 +1,4 @@
+ultralytics
+flask
+waitress
+pillow
