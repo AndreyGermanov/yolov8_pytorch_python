@@ -1,5 +1,11 @@
 # Traffic Lights Object Detector using YOLOv8 neural network
 
+<div align="center">
+<a href="https://dev.to/andreygermanov/a-practical-introduction-to-object-detection-with-yolov8-neural-network-3n8c">
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--mZ1E0vOa--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n2auv9i8405cgnxhru40.png"/>
+</a>
+</div>
+
 This is a source code of a web application for this article: 
 https://dev.to/andreygermanov/a-practical-introduction-to-object-detection-with-yolov8-neural-network-3n8c
 
