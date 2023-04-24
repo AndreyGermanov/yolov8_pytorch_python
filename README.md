@@ -1,7 +1,7 @@
 # Traffic Lights Object Detector using YOLOv8 neural network
 
 This is a source code of a web application for this article: 
-https://dev.to/andreygermanov/create-an-object-detector-using-yolov8-neural-network-and-deploy-it-as-a-web-service-on-python-julia-nodejs-and-javascript-39fn
+https://dev.to/andreygermanov/a-practical-introduction-to-object-detection-with-yolov8-neural-network-3n8c
 
 This is a web interface to [YOLOv8 object detection neural network](https://ultralytics.com/yolov8) 
 implemented on [Python](https://www.python.org) that uses a model to detect traffic lights and road signs on images.
