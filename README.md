@@ -6,6 +6,7 @@
 </a>
 </div>
 
+
 The source code for [this](https://dev.to/andreygermanov/a-practical-introduction-to-object-detection-with-yolov8-neural-network-3n8c#prepare_data) article.
 
 This is a web interface to [YOLOv8 object detection neural network](https://ultralytics.com/yolov8) 
