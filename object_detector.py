@@ -1,6 +1,5 @@
 from ultralytics import YOLO
-import json
-from flask import request, Response, Flask
+from flask import request, Flask, jsonify
 from waitress import serve
 from PIL import Image
 
@@ -26,8 +25,8 @@ def detect():
         :return: a JSON array of objects bounding boxes in format [[x1,y1,x2,y2,object_type,probability],..]
     """
     buf = request.files["image_file"]
-    boxes = detect_objects_on_image(Image.open(buf.stream))
-    return Response(json.dumps(boxes),  mimetype='application/json')
+    boxes = detect_objects_on_image(buf.stream)
+    return jsonify(boxes)
 
 
 def detect_objects_on_image(buf):
@@ -40,7 +39,7 @@ def detect_objects_on_image(buf):
     :return: Array of bounding boxes in format [[x1,y1,x2,y2,object_type,probability],..]
     """
     model = YOLO("best.pt")
-    results = model.predict(buf)
+    results = model.predict(Image.open(buf))
     result = results[0]
     output = []
     for box in result.boxes:
